@@ -1,4 +1,4 @@
 ----Get week ends in Friday, date will shows in Friday 
-  Case 
-        when dayofweek(cast(calendar_date as timestamp))=7 then to_date(date_sub(cast(calendar_date as string),6))
+     Case 
+        when dayofweek(cast(calendar_date as timestamp))=7 then to_date(date_sub(cast(calendar_date as string),-6))
         else to_date(date_sub(cast(calendar_date as string),dayofweek(cast(calendar_date as timestamp))-6))	 end as weekdt
