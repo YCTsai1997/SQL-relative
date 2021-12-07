@@ -1,4 +1,4 @@
 %sql
 select microsegment_2,split(microsegment_2, '\\_')[0] as T1,split(microsegment_2, '\\_')[1] as T2
-from lgu_farxiga.byd_samplealloc_pdecurve2
+from Schema.tablename
 limit 2
